@@ -1,0 +1,66 @@
+.nav-bar {
+  align-items: center;
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-between;
+  padding: $unit;
+  width: 100%;
+  img {
+    height: $unit * 5;
+  }
+}
+
+.nav-bigscreens {
+  display: none;
+}
+
+.nav-dropdown-menu {
+  animation-duration: 1.7s;
+  animation-name: dropdown;
+  display: none;
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: $unit;
+  }
+  li:nth-child(1) {
+    background-color: lighten($main-color, 5%);
+  }
+  li:nth-child(2) {
+    background-color: lighten($main-color, 10%);
+  }
+  li:nth-child(3) {
+    background-color: lighten($main-color, 15%);
+  }
+  li:nth-child(4) {
+    background-color: lighten($main-color, 20%);
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .js-btn-menu {
+    display: none;
+  }
+  .nav-bigscreens {
+      display: block;
+      li {
+        display: inline;
+        padding: $unit;
+      }
+  }
+}
