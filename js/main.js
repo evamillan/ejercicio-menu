@@ -1,16 +1,12 @@
 var menuButton = document.querySelector('.js-btn-menu');
-var dropDownMenu = document.querySelector('.nav-dropdown-menu');
-var menuVisibility = document.querySelector('.nav-dropdown-menu').getAttribute('display');
 
 function toggleVisibility() {
-  if (menuVisibility = "none") {
-    dropDownMenu.style.display = "block";
-    menuVisibility = "block";
-  }
-  else if (menuVisibility = "block") {
-    dropDownMenu.style.display = "none";
-    console.log("prueba");
-  }
+    var dropDownMenu = document.querySelector('.nav-dropdown-menu');
+    if (dropDownMenu.style.display === 'none') {
+        dropDownMenu.style.display = 'block';
+    } else {
+        dropDownMenu.style.display = 'none';
+    }
 }
 
 menuButton.addEventListener('click', toggleVisibility);
