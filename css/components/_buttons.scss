@@ -1,0 +1,20 @@
+.js-btn-menu {
+  width: $unit * 4;
+  height: $unit * 4;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+
+  &:focus {
+  outline: 0;
+  }
+
+  span {
+    background-color: white;
+    border-radius: $unit;
+    display: block;
+    width: $unit * 3;
+    height: $unit / 2;
+    margin-top: $unit / 2;
+  }
+}

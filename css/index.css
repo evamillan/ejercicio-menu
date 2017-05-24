@@ -90,6 +90,23 @@ header {
 
   .nav-dropdown-menu {
     display: none; } }
+.js-btn-menu {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent; }
+  .js-btn-menu:focus {
+    outline: 0; }
+  .js-btn-menu span {
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 5px; }
+
 .hidden {
   display: none; }
 
