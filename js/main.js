@@ -2,10 +2,10 @@ var menuButton = document.querySelector('.js-btn-menu');
 
 function toggleVisibility() {
     var dropDownMenu = document.querySelector('.nav-dropdown-menu');
-    if (dropDownMenu.style.display === 'none') {
-        dropDownMenu.style.display = 'block';
+    if (dropDownMenu.classList.contains('hidden')) {
+        dropDownMenu.classList.remove('hidden');
     } else {
-        dropDownMenu.style.display = 'none';
+        dropDownMenu.classList.add('hidden');
     }
 }
 

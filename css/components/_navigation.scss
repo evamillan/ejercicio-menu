@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   padding: $unit;
-  width: 100%;
+  position: relative;
+
   img {
     height: $unit * 5;
   }
@@ -17,7 +18,7 @@
 .nav-dropdown-menu {
   animation-duration: 1.7s;
   animation-name: dropdown;
-  display: none;
+  position: absolute;
   width: 100%;
 
   ul {
@@ -46,9 +47,11 @@
 @keyframes dropdown {
   0% {
     opacity: 0;
+    transform: translate3d(0, -100%, 0);
   }
   100% {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -62,5 +65,8 @@
         display: inline;
         padding: $unit;
       }
+  }
+  .nav-dropdown-menu {
+    display: none;
   }
 }
